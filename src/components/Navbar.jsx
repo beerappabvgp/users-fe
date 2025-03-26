@@ -7,6 +7,7 @@ const Navbar = () => {
       <ul className='flex space-x-4'>
         <a href="/signup">Signup</a>
         <a href="/login">Login</a>
+        <a href="/createPost">CreatePost</a>
       </ul>
     </div>
   )

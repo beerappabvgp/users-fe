@@ -10,7 +10,7 @@ const Signin = () => {
         e.preventDefault();
         const response = await fetch("http://localhost:5000/users/login", {
             method: "POST",
-            body: JSON.striqngify({
+            body: JSON.stringify({
                 email,
                 password
             }),
@@ -42,7 +42,7 @@ const Signin = () => {
                         setPassword(e.target.value)
                     }} />
                 </div>
-                <button className='border-2 border-green p-4 rounded-lg disabled' onClick={handleSignIn}>Signin</button>
+                <button className='border-2 border-green p-4 rounded-lg' onClick={handleSignIn}>Signin</button>
             </form>
 
             <br />

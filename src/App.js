@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
 import Home from './components/Home';
+import CreatePost from './components/CreatePost';
+import FireBase from './components/FirebaseImageUpload';
 
 function App() {
 
@@ -14,7 +16,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Signin />} />
+        <Route path="/createPost" element={<CreatePost />} />
       </Routes>
+      <FireBase />
     </div>
   );
 }
